@@ -4,3 +4,7 @@ httpx
 psutil
 pydantic
 uvicorn[standard]
+
+# rivendell only - GPU metrics via NVML. Safe to omit elsewhere; the GPU
+# collector degrades to null when pynvml or an NVIDIA driver is absent.
+# pynvml
